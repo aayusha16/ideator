@@ -1,3 +1,8 @@
-// Entry point for the build script in your package.json
+// Entry point for the build script
 import "@hotwired/turbo-rails"
 import "./controllers"
+import { initFlowbite } from "flowbite"
+
+document.addEventListener("turbo:load", () => {
+  initFlowbite()
+})

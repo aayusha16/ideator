@@ -115,6 +115,7 @@ GEM
     erubi (1.13.1)
     ffi (1.17.4-x64-mingw-ucrt)
     ffi (1.17.4-x86_64-linux-gnu)
+    fiddle (1.1.8)
     globalid (1.4.0)
       activesupport (>= 6.1)
     i18n (1.15.2)
@@ -187,6 +188,7 @@ GEM
     nokogiri (1.19.4-x86_64-linux-gnu)
       racc (~> 1.4)
     ostruct (0.6.3)
+    pagy (6.5.0)
     parallel (2.3.0)
     parser (3.3.13.0)
       ast (~> 2.4.1)
@@ -296,6 +298,9 @@ GEM
       logger (~> 1.4)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
+    simple_form (5.4.1)
+      actionpack (>= 7.0)
+      activemodel (>= 7.0)
     sshkit (1.25.1)
       base64
       logger
@@ -346,16 +351,19 @@ DEPENDENCIES
   capybara
   cssbundling-rails
   debug
+  fiddle (~> 1.1)
   image_processing (~> 1.2)
   jbuilder
   jsbundling-rails
   kamal
+  pagy (~> 6.2)
   pg (~> 1.1)
   propshaft
   puma (>= 5.0)
   rails (~> 8.1.4)
   rubocop-rails-omakase
   selenium-webdriver
+  simple_form (~> 5.3)
   stimulus-rails
   thruster
   turbo-rails
@@ -399,6 +407,7 @@ CHECKSUMS
   erubi (1.13.1) sha256=a082103b0885dbc5ecf1172fede897f9ebdb745a4b97a5e8dc63953db1ee4ad9
   ffi (1.17.4-x64-mingw-ucrt) sha256=f6ff9618cfccc494138bddade27aa06c74c6c7bc367a1ea1103d80c2fcb9ed35
   ffi (1.17.4-x86_64-linux-gnu) sha256=9d3db14c2eae074b382fa9c083fe95aec6e0a1451da249eab096c34002bc752d
+  fiddle (1.1.8) sha256=7fa8ee3627271497f3add5503acdbc3f40b32f610fc1cf49634f083ef3f32eee
   globalid (1.4.0) sha256=037f12fbf1d9d7a014d501c2d5c77356fd4ddd96d7a7991d6700bba96706f427
   i18n (1.15.2) sha256=00f9eb62412fe593b2a65a97daa75300d37abb8f7202ec748e94b6d46a9dd1b5
   image_processing (1.14.0) sha256=754cc169c9c262980889bec6bfd325ed1dafad34f85242b5a07b60af004742fb
@@ -430,6 +439,7 @@ CHECKSUMS
   nokogiri (1.19.4-x64-mingw-ucrt) sha256=051da97b8eccfdb5444fed40246a35e10d7298b9efe759b4cd25455ea04c587e
   nokogiri (1.19.4-x86_64-linux-gnu) sha256=379fae440b28915e3f19d752ce2dcf8465ed2b2fbefd2a7ca0dd497bc981a06a
   ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
+  pagy (6.5.0) sha256=3b2418e79bd67abbac820dddaf6fd76665bac4170b2fef0f4a601a6400ef1a07
   parallel (2.3.0) sha256=f75a3e904101ce6a1ccb6b8dc800cbafd42166d83330192438dcf29395167a6f
   parser (3.3.13.0) sha256=e02f9b63c2fe05b0c68f692ba4df89b3cb113b663964f75d988fbebfd6c3deca
   pg (1.7.0-x64-mingw-ucrt) sha256=49294a4fe50746289f67a3eccccba32bcd65d52c39429e4a2bc7ea37b29583fe
@@ -465,6 +475,7 @@ CHECKSUMS
   rubyzip (3.7.0) sha256=65c19294da75297a939006f3516deacc33185fbd721ff1954f7a231db6d3e121
   securerandom (0.4.1) sha256=cc5193d414a4341b6e225f0cb4446aceca8e50d5e1888743fac16987638ea0b1
   selenium-webdriver (4.52.0) sha256=5d45ba100ea8b57f5a8c25979a636d48b4c60c39973478930d78e884bdeecd2d
+  simple_form (5.4.1) sha256=58c3d229034c7e5545035c3271b6f030ef730c340b9d7d8eb730e0a385b20808
   sshkit (1.25.1) sha256=be3f10b9d6eb0b44d5eaba3f7cbe41bc6bb894bce4339688ac20124391455b78
   stimulus-rails (1.3.4) sha256=765676ffa1f33af64ce026d26b48e8ffb2e0b94e0f50e9119e11d6107d67cb06
   thor (1.5.0) sha256=e3a9e55fe857e44859ce104a84675ab6e8cd59c650a49106a05f55f136425e73
