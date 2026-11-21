@@ -66,4 +66,4 @@ end
 
 gem "fiddle", "~> 1.1"
 gem "simple_form", "~> 5.3"
-gem "pagy", "~> 6.2"
+gem "pagy", "~> 43.8"
